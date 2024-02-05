@@ -2,6 +2,7 @@
   --color1: #000;
   --color2: #fff;
   --color3: #b30;
+  --color4: #d1d1d1;
 }
 
 .container {
@@ -21,8 +22,12 @@
 }
 
 #text-input {
-  width: 300px;
+  width: 500px;
   font-size: 1.5rem;
+}
+
+#text-input:focus {
+  outline-color: var(--color2);
 }
 
 #check-btn {
@@ -30,17 +35,22 @@
   height: 30px;
   width: 90px;
   font-size: 1rem;
+  font-weight: 550;
   text-transform: uppercase;
   padding: 5px 10px;
   border-radius: 6px;
+  cursor: pointer;
+  
 }
 
 #check-btn:hover {
   transform: scale(1.1);
   transition: .2s;
+  background-color: var(--color4);
+  font-weight: bold;
 }
 
-#result {
-  margin-top: 20px;
+#result  {
+  margin-top: 50px;
   font-size: 1.5rem;
-}
+};
